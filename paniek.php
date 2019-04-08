@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
 	<title>panicc attacc</title>
 	<link rel="stylesheet" type="text/css" href="paniek.css">
@@ -62,7 +62,7 @@
             <?php
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     if(empty($_POST["pet"]) || empty($_POST["person"]) || empty($_POST["country"]) || empty($_POST["boringhobby"]) || empty($_POST["toy"]) ||empty($_POST["teacher"]) || empty($_POST["money"]) || empty($_POST["hobby"])){
-                        echo "<h1 id='pls'>Gelieve alle verplichte velden invullen</h1>";
+                        echo "<h1>", " id='pls'>Gelieve alle verplichte velden invullen", "</h1>";
                     }else{
                     	echo '<p id="text"><br>';
                         echo 'Er heerst paniek in het koningkrijk ',$country,'. Koning ',$teacher,' is ten einde raad en als koning ',$teacher,' ten einde raad is, dan roept hij zijn ten-einde-raadsheer ',$person,'.','<br>';
