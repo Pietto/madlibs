@@ -64,7 +64,7 @@
                     if(empty($_POST["pet"]) || empty($_POST["person"]) || empty($_POST["country"]) || empty($_POST["boringhobby"]) || empty($_POST["toy"]) ||empty($_POST["teacher"]) || empty($_POST["money"]) || empty($_POST["hobby"])){
                         echo "<h1 id='pls'>Gelieve alle verplichte velden invullen</h1>";
                     }else{
-                    	echo '<p id="text">';
+                    	echo '<p id="text"><br>';
                         echo 'Er heerst paniek in het koningkrijk ',$country,'. Koning ',$teacher,' is ten einde raad en als koning ',$teacher,' ten einde raad is, dan roept hij zijn ten-einde-raadsheer ',$person,'.','<br>';
                         echo '"',$person,'! Het is een ramp! Het is een schande!"','<br>';
                         echo '"Sire, Majesteit, Uwe luidruchtighed, wat is er aan de hand?"','<br>';
@@ -73,7 +73,7 @@
                         echo '"Ja, da\'s leuk en aardag, maar hoe moet ik hem in de tussentijd ',$hobby,' leren?"','<br>';
                         echo '"Maar Sire, daar kunt u toch uw ',$money,' voor gebruiken."','<br>';
                         echo '"',$person,', je hebt helemaal gelijk! Wat zou ik doen als ik jou niet had."','<br>';
-                        echo 'Mij ',$boringhobby,', Sire."';
+                        echo '"Mij ',$boringhobby,', Sire."';
                         echo '</p>';
                     }
                 }
