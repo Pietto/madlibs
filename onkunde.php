@@ -20,7 +20,7 @@
 
 	<?php
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	        $wannado = strip_tags($_POST['wannado']);
+	        $wannado = $_POST['wannado'];
 	        $person = strip_tags($_POST['person']);
 	        $number = strip_tags($_POST['number']);
 	        $item = strip_tags($_POST['item']);
@@ -35,7 +35,7 @@
 		<form method='post'>
 			<div class='form-group row'>
 				<p class="col-sm-6">Wat zou je graag willen kunnen?</p>
-				<input class="col-sm-6" type="text" name="wannado" value='<?php echo $wannado; ?>' maxlength='16'>
+				<input class="col-sm-6" type="text" name="wannado" value='<?php echo $wannado; ?>' maxlength='1000'>
 			</div>
 			<div class='form-group row'>
 				<p class="col-sm-6">Met welke persoon kun je goed opschieten?</p>
@@ -74,7 +74,7 @@
                         echo "<h1 id='pls'>Gelieve alle verplichte velden invullen</h1>";
                     }else{
                     	echo '<p id="text"><br>';
-                    	echo 'Er zijn veel mensen die niet kunnen ',$wannado,'. Neem nou ',$person,'. Zelfs met de hup van een ',$item,' of zelfs ',$number,' kan ',$person,' niet ',$wannado,'. Dat heeft niet te maken met een gebrek aan ',$upside,', maar met een te veel aan ',$downside,'. Te veel ',$downside,' leidt tot ',$worst,' en dat is niet goed als je wilt ',$wannado,'. Helaas voor ',$person,'.';
+                    	echo 'Er zijn veel mensen die niet kunnen ',$wannado,'. Neem nou ',$person,'. Zelfs met de hulp van een ',$item,' of zelfs ',$number,' kan ',$person,' niet ',$wannado,'. Dat heeft niet te maken met een gebrek aan ',$upside,', maar met een te veel aan ',$downside,'. Te veel ',$downside,' leidt tot ',$worst,' en dat is niet goed als je wilt ',$wannado,'. Helaas voor ',$person,'.';
                         echo '</p>';
                     }
                 }
